@@ -2,7 +2,7 @@ module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     fontFamily: {
-      primary: 'Orbitron',
+      primary: 'Plus Jakarta Sans',
       secondary: 'Rajdhani',
       tertiary: 'Aldrich',
     },
@@ -18,8 +18,26 @@ module.exports = {
       xl: '1200px',
     },
     extend: {
+      // theme:{
+      //   fontSize:{
+      //     base1:['18px','22px'],
+      //     base2:['38px','47.88px'],
+
+      //   }
+      // },
+      theme:{
+        fontFamily: {
+          Sans:['Plus Jakarta Sans', 'sans-serif']
+        }
+      },
       colors: {
         primary: '#0a0a0a',
+        secondary:'#2E2E2E',
+        secondary_1:'#454545',
+        secondary_2:'#737373',
+
+
+
         accent: '#B809C3',
       },
       backgroundImage: {
@@ -27,6 +45,10 @@ module.exports = {
         about: "url('./assets/about.png')",
         services: "url('./assets/services.png')",
       },
+      // backgroundColor: theme =>({
+      //   ...theme('colors'),
+      //   'secondary':'#454545',
+      // })
     },
   },
   plugins: [],

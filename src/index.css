@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300;1,400;1,900&family=Montserrat:ital,wght@1,300&family=Plus+Jakarta+Sans:wght@700&family=Sacramento&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -67,5 +68,13 @@
   }
   .section {
     @apply py-8 lg:py-24 lg:h-screen flex items-center;
+  }
+}
+@layer components{
+  .card-head{
+    @apply font-[800] font-primary text-[38px] leading-[48px] text-[#B9E901] text-start tracking-widest
+  }
+  .card-mid{
+    @apply font-[500] font-primary text-[18px] leading-[22px] text-secondary_2 text-start
   }
 }
